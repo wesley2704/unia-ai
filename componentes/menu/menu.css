@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background: #481958;
+    justify-content: center;
+}
+p{
+    color: white;
+}
