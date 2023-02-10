@@ -15,4 +15,23 @@ let tijelas = [{
                 nome:"tijela extra grande",
                  preco:29.99},
     ] 
+let sacola = []
 
+function criarPedido(tijela,adicionais,){
+  let pedido = {
+    tijela,
+    adicionais
+  }
+  return pedido
+}
+
+function adicionarPedido(tijela,adicionais){
+  let novoPedido = criarPedido(tijela,adicionais)
+  sacola.push(novoPedido)
+}
+
+let div = ""
+
+function renderizarSacola(){
+  
+}
