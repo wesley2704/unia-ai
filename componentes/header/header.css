@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  background-image: url('/assets/imagens/capa.png');
+  background-image: url('https://media.discordapp.net/attachments/1073655592876527627/1073663075070267492/capa.png');
   background-size: 110vw;
   background-repeat: no-repeat;
   display: block;
@@ -67,19 +67,30 @@ header {
   padding-left: 5px;
 }
 
-.botao__pedido:hover {
-  background-color: #c729fc;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  
+    
 }
 
-.container__compra {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.menu {
+    background-color: #481958;
+    height: 104px;
+    width: 100%;
+    top: 822px;
+    position: absolute;
+    left: 0%;
 }
+.navegacao {
+    display: flex;
+    height: 104px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
 
-.container__compra-botao {
-  align-self: flex-end;
-  margin-top: 30rem;
 }
 
 .compra-botao {
@@ -91,10 +102,26 @@ header {
   padding: 1rem;
   width: 20rem;
 }
+img {
 
-.compra-botao:hover {
-  background-color: #4cee49;
+    width: 34px;
+    height: 36px;
+    top: 849px;
+    left: 54px;
 }
+h3{
+    color: #ffffff;
+    font-family: 'Inter';
+    width: 92px;
+    line-height: 17px;
+    text-align: center;
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+
 
 
 

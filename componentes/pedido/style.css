@@ -4,22 +4,47 @@
     margin: 0;
     padding: 0;
 }
-
-.container {
+body{
+    font-family: sans-serif;
+}
+.container__pedido {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-items: end;
+    border: 1px solid #CCCCCC;
+    border-radius: 13px;
+    position: absolute;
+    width: 382px;
+    height: 140px;
 }
+.container__paragrafo{
 
-img {
-  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 30px;
+    padding-top: 5px;
 }
-
 h1 {
-    margin-bottom: 20px;
-}
 
-p {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin: 8px 0 ;
+    width: 162px;
+    height: 24px;
+    
 }
+p {
+    align-items: center;
+    font-size: 14px;
+    top: 578px;
+    color: #4E4A4A;
+}
+.preco{
+    text-align: right;
+    padding-right: 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+
+}   
