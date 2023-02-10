@@ -1,9 +1,10 @@
-let tijelas = [{
-    id:1,
-    nome:"tijela pequena",
-     preco:9.99},
-     {
-        id:2,
+let tijelas = [
+     {id:1,
+        nome:"tijela pequena",
+        preco:9.99,
+        img:"https://cdn.discordapp.com/attachments/1073655592876527627/1073658482676482088/sorvete-brasileiro-de-acai-congelado-em-copo-plastico-com-morango-isolado-no-fundo-branco-vista-frontal-do-menu-de-verao_317399-989.png"},
+
+     {id:2,
         nome:"tijela média",
          preco:14.99},
          {
