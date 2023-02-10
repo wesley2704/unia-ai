@@ -38,7 +38,7 @@ header {
 .container__textos-horario {
   font-weight: 400;
   font-size: 18px;
-  line-height: 0.2px;
+  margin: auto;
   text-align: center;
 }
 
