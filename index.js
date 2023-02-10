@@ -30,8 +30,3 @@ function adicionarPedido(tijela,adicionais){
   sacola.push(novoPedido)
 }
 
-let div = ""
-
-function renderizarSacola(){
-  
-}
