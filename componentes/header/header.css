@@ -38,7 +38,7 @@ header {
 .container__textos-horario {
   font-weight: 400;
   font-size: 18px;
-  line-height: 0.2px;
+  margin: auto;
   text-align: center;
 }
 
@@ -59,8 +59,36 @@ header {
   width: 20rem;
 }
 
+.botao__pedido:hover {
+  background-color: #c729fc;
+}
 
 
+.container__compra {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container__compra-botao {
+  align-self: flex-end;
+  margin-top: 30rem;
+}
+
+.compra-botao {
+  background: #1BE017;
+  border-radius: 1.4rem;
+  border-color: transparent;
+  color: #ffffffea;
+  font-size: 20px;
+  /* margin-top: 5rem; */
+  padding: 1.1rem;
+  width: 20rem;
+}
+
+.compra-botao:hover {
+  background-color: #4cee49;
+}
 
 
 
