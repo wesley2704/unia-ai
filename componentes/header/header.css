@@ -57,12 +57,19 @@ header {
   margin-top: 2rem;
   padding: 0.8rem;
   width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao__pedido div{
+  margin-top: 5px;
+  padding-left: 5px;
 }
 
 .botao__pedido:hover {
   background-color: #c729fc;
 }
-
 
 .container__compra {
   display: flex;
@@ -77,12 +84,11 @@ header {
 
 .compra-botao {
   background: #1BE017;
-  border-radius: 1.4rem;
+  border-radius: 1.6rem;
   border-color: transparent;
   color: #ffffffea;
   font-size: 20px;
-  /* margin-top: 5rem; */
-  padding: 1.1rem;
+  padding: 1rem;
   width: 20rem;
 }
 
