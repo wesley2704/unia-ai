@@ -2,7 +2,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
 header {
   background-image: url('/assets/imagens/capa.png');
   background-size: 110vw;
@@ -26,7 +25,6 @@ header {
 .container__textos {
   display: flex;
   flex-direction: column;
-  
 }
 
 .container__textos-titulo {
