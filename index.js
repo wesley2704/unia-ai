@@ -15,4 +15,3 @@ let tijelas = [{
                 nome:"tijela extra grande",
                  preco:29.99},
     ] 
-
