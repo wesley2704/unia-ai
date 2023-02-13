@@ -17,6 +17,11 @@ body{
     width: 382px;
     height: 140px;
 }
+
+.container__compra-botao{
+    display: flex;
+    flex-direction: column;
+}
 .container__paragrafo{
 
     display: flex;

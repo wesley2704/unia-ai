@@ -75,20 +75,12 @@ header {
     
 }
 
-<<<<<<< HEAD
 .container__compra {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-=======
-.menu {
-    background-color: #481958;
-    height: 104px;
-    width: 100%;
-    top: 822px;
-    position: absolute;
-    left: 0%;
->>>>>>> a954eb623938516d57ce9b1f1152b892fbd8dabc
+  flex-direction: column;
+  
+  
+
 }
 .navegacao {
     display: flex;
@@ -99,9 +91,24 @@ header {
     border: 1px solid red;
 
 }
-<<<<<<< HEAD
 
+.container__compra-botao{
+  display: flex;
+  justify-content: center;
+}
+
+.container__compra{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+ 
+}
 .compra-botao {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
   background: #1BE017;
   border-radius: 1.6rem;
   border-color: transparent;
@@ -109,13 +116,8 @@ header {
   font-size: 20px;
   padding: 1rem;
   width: 20rem;
-=======
-.navegacao div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
->>>>>>> a954eb623938516d57ce9b1f1152b892fbd8dabc
+  display: flex;
+  justify-content: center;
 }
 img {
 
