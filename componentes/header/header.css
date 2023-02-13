@@ -75,6 +75,24 @@ header {
   padding-left: 5px;
 }
 
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  
+    
+}
+
+.container__compra {
+  display: flex;
+  flex-direction: column;
+  
+  
+
+}
+>>>>>>> 281d9d70030bb4d57ec61b7a3da207614dbfbd17
 .navegacao {
     display: flex;
     height: 104px;
@@ -84,6 +102,36 @@ header {
     border: 1px solid red;
 }
 
+<<<<<<< HEAD
+=======
+.container__compra-botao{
+  display: flex;
+  justify-content: center;
+}
+
+.container__compra{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+ 
+}
+.compra-botao {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  background: #1BE017;
+  border-radius: 1.6rem;
+  border-color: transparent;
+  color: #ffffffea;
+  font-size: 20px;
+  padding: 1rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 281d9d70030bb4d57ec61b7a3da207614dbfbd17
 img {
     width: 34px;
     height: 36px;
