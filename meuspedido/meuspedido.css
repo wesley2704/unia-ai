@@ -70,10 +70,12 @@
 }
 .navegacao__meus__pedido {
     display: flex;
+    height: 104px;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid rgb(27, 26, 26);
+    border: 1px solid red;
+    text-align: center;
 }
 .navegacao div {
     display: flex;
@@ -82,20 +84,23 @@
     flex-direction: column;
 }
 
+
 .ima__icons {
-    padding: 25%;
     width: 34px;
     height: 36px;
-    top: 849px;
-    left: 54px;
+    
+   
+    
 
 }
-h3 {
+.icons__texto{
     color: #ffffff;
+    font-family: 'Inter';
     width: 92px;
     line-height: 17px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+    font-family:'Inter', sans-serif;
     font-weight: 400;
+    
 
 }
