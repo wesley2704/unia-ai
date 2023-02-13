@@ -16,63 +16,65 @@
     <div class="container__menu">
         <div class="container__toppings">
             <div class="container__titulos-toppings">
-                <h3>Mix toppings</h3>
-                <h5>É possível adicionar até 5 opções</h5>
+                <h3 class="container__titulo">Mix toppings</h3>
+                <h5 class="container__texto">É possível adicionar até 5 opções</h5>
             </div>
-            <input type="checkbox" name="cereja">
-            <label for="cereja">Cereja</label>
-            <input type="checkbox" name="chocoball">
-            <label for="cereja">Chocoball</label>
-            <input type="checkbox" name="gotas de chocolate">
-            <label for="cereja">Gotas de chocolate</label>
-            <input type="checkbox" name="jujuba">
-            <label for="cereja">Jujuba</label>
-            <input type="checkbox" name="leite em pó">
-            <label for="cereja">Leite em pó</label>
-            <input type="checkbox" name="m&m's">
-            <label for="cereja">M&M'S</label>
-            <input type="checkbox" name="ovomaltine">
-            <label for="cereja">Ovomaltine</label>
+            <label for="cereja"><input type="checkbox" name="cereja" id="cereja">Cereja</label>
+            
+            <label for="chocoball"><input type="checkbox" name="chocoball" id="chocoball">Chocoball</label>
+           
+            <label for="gotas-chocolote"><input type="checkbox" name="gotas de chocolate" id="gotas-chocolate">Gotas de chocolate</label>
+            
+            <label for="jujuba"><input type="checkbox" name="jujuba" id="jujuba">Jujuba</label>
+            
+            <label for="leite-po"><input type="checkbox" name="leite em pó" id="leite-po">Leite em pó</label>
+            
+            <label for="m&m"><input type="checkbox" name="m&m's" id="m&m">M&M'S</label>
+            
+            <label for="ovomaltine"><input type="checkbox" name="ovomaltine" id="ovomaltine">Ovomaltine</label>
         </div>
         <div class="container__cremes">
             <div class="container__titulos-cremes">
-                <h3>Cremes</h3>
-                <h5>É possível adicionar apenas 1 opção</h5>
+                <h3 class="container__titulo">Cremes</h3>
+                <h5 class="container__texto">É possível adicionar apenas 1 opção</h5>
             </div>
-            <input type="checkbox" name="creme cupuaçu">
-            <label for="cereja">Creme cupuaçu</label>
-            <input type="checkbox" name="creme de morango">
-            <label for="cereja">Creme de morango</label>
-            <input type="checkbox" name="creme de ninho">
-            <label for="cereja">Creme de ninho</label>
-            <input type="checkbox" name="creme de ovomaltine">
-            <label for="cereja">Creme de ovomaltine</label>
-            <input type="checkbox" name="sem creme">
-            <label for="cereja">Sem creme</label>
+            
+            <label for="creme-cupuaçu"><input type="checkbox" name="creme cupuaçu" id="creme-cupuaçu">Creme cupuaçu</label>
+            
+            <label for="creme-morango"><input type="checkbox" name="creme de morango" id="creme-morango">Creme de morango</label>
+            
+            <label for="creme-ninho"><input type="checkbox" name="creme de ninho" id="creme-ninho">Creme de ninho</label>
+            
+            <label for="creme-ovomaltine"><input type="checkbox" name="creme de ovomaltine" id="creme-ovomaltine">Creme de ovomaltine</label>
+            
+            <label for="sem-creme"><input type="checkbox" name="sem creme" id="sem-creme">Sem creme</label>
         </div>
         <div class="container__frutas">
             <div class="container__titulos-frutas">
-                <h3>Frutas</h3>
-                <h5>É possível adicionar até 2 opções</h5>
+                <h3 class="container__titulo">Frutas</h3>
+                <h5 class="container__texto">É possível adicionar até 2 opções</h5>
             </div>
-            <input type="checkbox" name="banana">
-            <label for="cereja">Banana</label>
-            <input type="checkbox" name="castanha">
-            <label for="cereja">Castanha</label>
-            <input type="checkbox" name="kiwi">
-            <label for="cereja">Kiwi</label>
-            <input type="checkbox" name="morango">
-            <label for="cereja">Morango</label>
-            <input type="checkbox" name="uva">
-            <label for="cereja">Uva</label>
+            
+            <label for="banana"><input type="checkbox" name="banana" id="banana">Banana</label>
+            
+            <label for="castanha"><input type="checkbox" name="castanha" id="castanha">Castanha</label>
+            
+            <label for="kiwi"><input type="checkbox" name="kiwi" id="kiwi">Kiwi</label>
+            
+            <label for="morango"><input type="checkbox" name="morango" id="morango">Morango</label>
+            
+            <label for="uva"><input type="checkbox" name="uva" id="uva">Uva</label>
         </div>
     </div>
     <div class="container__botao-finalizacao">
         <button type="submit" class="botao-finalizacao">
-          <img src="../../assets/icones/check-icone.png" class="icone__finalizacao"/>
+          <!-- <img src="../../assets/icones/check-icone.png" class="icone__finalizacao"/> -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icone__finalizacao">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+          </svg>
           Finalizar Pedido
         </button>
-      </div>
+    </div>
 </body>
 
 </html>
