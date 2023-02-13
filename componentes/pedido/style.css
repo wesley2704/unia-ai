@@ -23,7 +23,7 @@ body{
     flex-direction: column;
 }
 .container__paragrafo{
-
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
