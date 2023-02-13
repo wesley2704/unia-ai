@@ -2,3 +2,69 @@ body {
     font-family: 'Inter', sans-serif;
 
 }
+
+.container__titulos-toppings{
+    text-align: center;
+}
+
+.container__texto {
+    font-size: 14px;
+    color: #575757;
+    font-weight: 400;
+    margin-top: 0;
+}
+.container__titulo {
+    text-transform: uppercase;
+    margin: 2em 0 0 0;
+}
+
+.container__toppings {
+    display: flex;
+    flex-direction:column;
+}
+
+.container__titulos-cremes {
+    text-align: center;
+}
+
+.container__cremes {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__titulos-frutas {
+    text-align: center;
+}
+
+.container__frutas {
+    display: flex;
+    flex-direction: column;
+}   
+
+.container__botao-finalizacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 30em;
+}
+
+.botao-finalizacao {
+    align-items: center;
+    color: white;
+    background-color: #1BE017;
+    border: none;
+    border-radius: 20px;
+    padding: 1em 5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.icone__finalizacao {
+    width: 22px;
+    margin-right: 5px;
+}
+label{
+    margin-top: 8px;
+    margin-left: 1rem;
+}
