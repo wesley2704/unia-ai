@@ -1,0 +1,16 @@
+@import url("styles/formulario.css");
+
+
+:root {
+    --roxo: #481958;
+    --branco: #FFFFFF;
+    --verde: #1BE017;
+    --roxo-claro: #653F71;
+}
+
+body {
+    background: var(--branco);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}

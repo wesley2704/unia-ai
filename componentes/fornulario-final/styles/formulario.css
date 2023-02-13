@@ -1,0 +1,72 @@
+.formulário__dados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+}
+.formulário {
+    background: var(--roxo);
+    border: 1px solid var(--roxo);
+    border-radius: 20px;
+    margin: 10em 1em 10em 1em;
+    padding: 0.5em;
+}
+
+.formulário__titulo {
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    margin: 2.5em 0;
+}
+
+.item{
+    color: var(--branco);
+}
+.botao__finalizar{
+    color: var(--branco);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--verde);
+    background-color: var(--verde);
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 0.8em;
+    padding: 0.8em;
+    width: 50%;
+    text-transform: uppercase;
+}   
+
+
+.item {
+    display: block;
+    margin: 0.5em;
+}
+
+.nhe{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 35px;
+
+}
+
+.nhe a{
+    padding: 15px 25px;
+}
+
+.formulário__resposta {
+    width: 100%;
+    outline: none;
+    border-radius: 11px;
+    height: 35px;
+    background-color: var(--roxo-claro);
+    border: none;
+    margin: 0.5em 0;
+}
+
+.formulário__item-flex{
+    display: flex;
+    column-gap: 10px;
+    
+}
+
+

@@ -1,9 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
   font-family: 'Inter', sans-serif;
 }
 
 header {
-  background-image: url('/assets/imagens/capa.png');
+  background-image: url('https://media.discordapp.net/attachments/1073655592876527627/1073663075070267492/capa.png');
   background-size: 110vw;
   background-repeat: no-repeat;
   display: block;
@@ -14,12 +19,15 @@ header {
 .container__imagem {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .container__imagem-logo {
   align-self: center;
-  margin: auto;
-  margin-top: 5rem;
+  /* margin: auto; */
+  margin-top: 130px;
+  height: 14rem;
+  width: 13rem;
 }
 
 .container__textos {
@@ -38,7 +46,7 @@ header {
 .container__textos-horario {
   font-weight: 400;
   font-size: 18px;
-  line-height: 0.2px;
+  margin: auto;
   text-align: center;
 }
 
@@ -57,6 +65,102 @@ header {
   margin-top: 2rem;
   padding: 0.8rem;
   width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao__pedido div{
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  
+    
+}
+
+.container__compra {
+  display: flex;
+  flex-direction: column;
+  
+  
+
+}
+>>>>>>> 281d9d70030bb4d57ec61b7a3da207614dbfbd17
+.navegacao {
+    display: flex;
+    height: 104px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+<<<<<<< HEAD
+=======
+.container__compra-botao{
+  display: flex;
+  justify-content: center;
+}
+
+.container__compra{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+ 
+}
+.compra-botao {
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  background: #1BE017;
+  border-radius: 1.6rem;
+  border-color: transparent;
+  color: #ffffffea;
+  font-size: 20px;
+  padding: 1rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 281d9d70030bb4d57ec61b7a3da207614dbfbd17
+img {
+    width: 34px;
+    height: 36px;
+    top: 849px;
+    left: 54px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Inter';
+    width: 92px;
+    line-height: 17px;
+    text-align: center;
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.compra-botao {
+  background: #9B2DC1;
+  border-radius: 1.6rem;
+  border-color: transparent;
+  color: #ffffffea;
+  font-size: 20px;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 

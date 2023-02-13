@@ -6,19 +6,28 @@ let tijelas = [
 
      {id:2,
         nome:"tijela média",
-        preco:14.99,
-        img:"https://cdn.discordapp.com/attachments/1073655592876527627/1073655625898279002/e3354c05a75f8cd0a76f6a97768d288f.png"},
+         preco:14.99},
+         {
+            id:3,
+            nome:"tijela grande",
+             preco:19.99},
+             {
+                id:4,
+                nome:"tijela extra grande",
+                 preco:29.99}
+    ];
 
-     {id:3,
-        nome:"tijela grande",
-        preco:19.99,
-        img:"https://img.freepik.com/fotos-premium/acai-congelado-brasileiro-com-morango-e-banana-em-uma-tigela-branca-isolada-no-fundo-branco_317399-731.jpg?w=2000"},
+let sacola = []
 
-     {id:4,
-        nome:"tijela extra grande",
-         preco:29.99,
-         img:"https://cdn.discordapp.com/attachments/1073655592876527627/1073660205499424869/image-removebg-preview.png"}
-               
-    ] 
+function criarPedido(tijela,adicionais,){
+  let pedido = {
+    tijela,
+    adicionais
+  }
+  return pedido
+}
 
-
+function adicionarPedido(tijela,adicionais){
+  let novoPedido = criarPedido(tijela,adicionais)
+  sacola.push(novoPedido)
+}
