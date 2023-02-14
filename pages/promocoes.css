@@ -21,12 +21,61 @@
 }
 .icone-container{
     padding: 0.4em;
-    padding-top: 1.2em;  
+    padding-top: 1.2em; 
+
 }
 .titulo-menu{
     color: #ffffff;
     opacity: 70%;
     justify-content: center;
     font-weight: 300;
-    font-size: 0.8em
+    font-size: 0.8em;
+    font-size: 11pt;
 }
+.titulo-principal{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 1em;
+}
+.item-promocao{
+    font-family: sans-serif;
+    margin: 6em 3em;
+    border: 1px solid #CCCCCC;
+    padding: 0.5em;
+    list-style-type: none;
+}
+.item-promocao li{
+    font-weight: bold;
+    padding-bottom: 0.4em;
+    font-size: 16pt;
+}
+.item-promocao p{
+    font-size: 10pt;
+    margin: 0.4em 1.3em;
+    color: #767676;
+}
+
+        /* TABLET  */
+@media (min-width: 720px){
+    .titulo-principal{
+        font-size: 28pt;
+    }
+    .item-promocao li{
+        font-size: 22pt;
+    }
+    .item-promocao p{
+        font-size: 16pt;
+    }
+    .navegacao{
+        height: 6em;
+    }
+    .titulo-menu{
+        font-size: 16pt;
+    }
+    .icone-container{
+        row-gap: 0.4em;
+    }
+}
+
+
+         /* COMPUTADOR */
