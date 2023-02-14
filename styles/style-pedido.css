@@ -13,14 +13,21 @@ body{
     align-items: center;
     border: 1px solid #CCCCCC;
     border-radius: 13px;
-    position: absolute;
-    width: 382px;
-    height: 140px;
+    width: 87%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    margin-top: 0.8rem;
+
+    
 }
+
+
 
 .container__compra-botao{
     display: flex;
     flex-direction: column;
+   
 }
 .container__paragrafo{
     
@@ -51,5 +58,6 @@ p {
     font-weight: bold;
     color: black;
     font-size: 16px;
+    padding-bottom: 0.6rem;
 
 }   

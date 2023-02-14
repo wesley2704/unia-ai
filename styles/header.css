@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  background-image: url('https://media.discordapp.net/attachments/1073655592876527627/1073663075070267492/capa.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 180px;
+  margin-bottom: 20rem;
+}
+
+.container__imagem {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.container__imagem-logo {
+  height: 14rem;
+  margin-top: 3rem;
+  width: 13rem;
+}
+
+.container__textos {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem;
+}
+
+.container__textos-titulo {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: -1.5rem;
+  text-align: center;
+}
+
+.container__textos-endereco,
+.container__textos-horario {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container__redes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.instagram {
+  height: 3rem;
+  width: 3rem;
+}
+
+.whatsapp {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.instagram__link {
+  margin-top: 1px;
+}
+
+a {
+  color: rgb(132, 132, 132);
+  font-size: 15px;
+  margin-top: -0.4rem;
+  text-decoration: none;
+}
+
+.center-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.botao__pedido {
+  align-items: center;
+  background: #9B2DC1;
+  border-radius: 1.6rem;
+  border-color: transparent;
+  box-shadow: 3px 5px 7px #888888;
+  color: #ffffffea;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 7px;
+  width: 15rem;
+}
+
+/* .navegacao {
+    display: flex;
+    height: 104px;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;  
+} */
+
+.container__compra-botao{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+#pedidos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8rem;
+  
+}
+.compra-botao {
+  margin: auto;
+  align-items: center;
+  background: #1BE017;
+  border-radius: 1.6rem;
+  border-color: transparent;
+  box-shadow: 3px 5px 7px #888888;
+  color: #ffffffea;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 10px;
+  width: 15rem;
+}
+
+/* img {
+    width: 34px;
+    height: 36px;
+    top: 849px;
+    left: 54px;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Inter';
+    width: 92px;
+    line-height: 17px;
+    text-align: center;
+    font-family:'Inter', sans-serif;
+    font-weight: 400;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
