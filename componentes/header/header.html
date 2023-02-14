@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="header.css" />
+    <title>Header</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="header.css" />
-  <title>Header</title>
-</head>
-
-<body>
-  <header>
-    <div class="container__imagem">
-      <img src="../../assets/imagens/logo.png" class="container__imagem-logo" />
-    </div>
-    <div class="container__textos">
-      <h2 class="container__textos-titulo">UNI AÇAÍ</h2>
-      <h4 class="container__textos-endereco">
-        Bairro: Centro • Fortaleza - CE
-      </h4>
-      <h4 class="container__textos-horario">
-        Funcionamento: Seg a Sáb das 17H às 22H
-      </h4>
-      <div class="container__redes">
-        <a href="#"><img src="../../assets/icones/Instagram.png" alt="whatsapp" class="instagram">@uni_acai</a>
-        <a href="#"><img src="../../assets/icones/Whatsapp.png" alt="instagram" class="whatsapp">(85)9999-0001</a>
+  <body>
+    <header>
+      <div class="container__imagem">
+        <img
+          src="../../assets/imagens/logo.png"
+          class="container__imagem-logo"
+        />
       </div>
-    </div>
-  </header>
-  <main>
-    <div class="container__botao">
-      <button type="submit" class="botao__pedido">
-        <img src="../../assets/icones/pedido-icone.png" class="icone__pedido" />
-        <div>Adicionar Pedido</div>
-      </button>
-    </div>
-    <div class="container__compra">
-      <div class="container__compra-botao">
-        <button type="submit" class="compra-botao">
-          <img src="../../assets/icones/check-icone.png" class="icone__compra" />
-          Finalizar Compra
+      <div class="container__textos">
+        <h2 class="container__textos-titulo">UNI AÇAÍ</h2>
+        <h4 class="container__textos-endereco">
+          Bairro: Centro • Fortaleza - CE
+        </h4>
+        <h4 class="container__textos-horario">
+          Funcionamento: Seg a Sáb das 17H às 22H
+        </h4>
+        <div class="container__redes">
+          <img
+            src="../../assets/icones/Instagram.png"
+            alt="whatsapp"
+            class="instagram"
+          />
+          <a href="#"><p class="instagram__link">@uni_acai</p></a>
+          <img
+            src="../../assets/icones/Whatsapp.png"
+            alt="instagram"
+            class="whatsapp"
+          />
+          <a href="#"><p class="numero__whatsapp">Conversar no chat</p></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container__botao">
+        <button type="submit" class="botao__pedido">
+          <img
+            src="../../assets/icones/pedido-icone.png"
+            class="icone__pedido"
+          />
+          <div>Adicionar Pedido</div>
         </button>
       </div>
-    </div>
-  </main>
-
-</body>
-
+      <div class="container__compra">
+        <div class="container__compra-botao">
+          <button type="submit" class="compra-botao">
+            <img
+              src="../../assets/icones/check-icone.png"
+              class="icone__compra"
+            />
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

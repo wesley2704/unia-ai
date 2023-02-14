@@ -12,61 +12,75 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   display: block;
-  height: 200px;
-  margin: 0;
+  height: 180px;
+  margin-bottom: 20rem;
 }
 
 .container__imagem {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin: 0;
 }
 
 .container__imagem-logo {
-  align-self: center;
   height: 14rem;
-  margin-top: 70px;
+  margin-top: 3rem;
   width: 13rem;
 }
 
 .container__textos {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 1rem;
 }
 
 .container__textos-titulo {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  margin-top: 0.8px;
+  margin-top: -1.5rem;
   text-align: center;
 }
 
 .container__textos-endereco,
 .container__textos-horario {
-  font-weight: 400;
-  font-size: 18px;
   text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .container__redes {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 6px 0;
 }
 
 .instagram {
-  height: 56px;
-  width: 56px;
+  height: 3rem;
+  width: 3rem;
 }
 
 .whatsapp {
-  height: 60px;
-  width: 60px;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.instagram__link {
+  margin-top: 1px;
+}
+
+a {
+  color: rgb(132, 132, 132);
+  font-size: 15px;
+  margin-top: -0.4rem;
+  text-decoration: none;
 }
 
 .container__botao {
   display: flex;
+  justify-content: center;
+  margin-bottom: 9rem;
 }
 
 .botao__pedido {
@@ -74,61 +88,44 @@ header {
   background: #9B2DC1;
   border-radius: 1.6rem;
   border-color: transparent;
+  box-shadow: 3px 5px 7px #888888;
   color: #ffffffea;
   display: flex;
   font-size: 20px;
-  margin-top: 15rem;
-  padding: 8px;
-  width: 16rem;
   justify-content: center;
-  box-shadow: 3px 5px 7px #888888;
+  padding: 7px;
+  width: 15rem;
 }
 
-.botao__pedido div{
-  margin-top: 5px;
-  padding-left: 5px;
-}
-
-.navegacao {
+/* .navegacao {
     display: flex;
     height: 104px;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
-    
-}
+    align-items: center;  
+} */
 
 .container__compra-botao{
   display: flex;
   justify-content: center;
-}
-
-.container__compra{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  bottom: 0px;
+  margin-bottom: 6rem;
 }
 
 .compra-botao {
-  display: flex;
   align-items: center;
-  align-content: space-around;
   background: #1BE017;
   border-radius: 1.6rem;
   border-color: transparent;
-  color: #ffffffea;
-  font-size: 20px;
-  margin-bottom: 50px;
-  padding: 10px;
-  width: 16rem;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
   box-shadow: 3px 5px 7px #888888;
+  color: #ffffffea;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 10px;
+  width: 15rem;
 }
-img {
+
+/* img {
     width: 34px;
     height: 36px;
     top: 849px;
@@ -143,7 +140,7 @@ h3 {
     text-align: center;
     font-family:'Inter', sans-serif;
     font-weight: 400;
-}
+} */
 
 
 
