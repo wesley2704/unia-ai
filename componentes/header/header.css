@@ -9,124 +9,123 @@ body {
 
 header {
   background-image: url('https://media.discordapp.net/attachments/1073655592876527627/1073663075070267492/capa.png');
-  background-size: 110vw;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: block;
-  height: 245px;
-  margin: -1rem;
+  height: 180px;
+  margin-bottom: 20rem;
 }
 
 .container__imagem {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin: 0;
 }
 
 .container__imagem-logo {
-  align-self: center;
-  /* margin: auto; */
-  margin-top: 130px;
   height: 14rem;
+  margin-top: 3rem;
   width: 13rem;
 }
 
 .container__textos {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 1rem;
 }
 
 .container__textos-titulo {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  margin-top: 0.8px;
+  margin-top: -1.5rem;
   text-align: center;
 }
 
 .container__textos-endereco,
 .container__textos-horario {
-  font-weight: 400;
-  font-size: 18px;
-  margin: auto;
   text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container__redes {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 6px 0;
+}
+
+.instagram {
+  height: 3rem;
+  width: 3rem;
+}
+
+.whatsapp {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.instagram__link {
+  margin-top: 1px;
+}
+
+a {
+  color: rgb(132, 132, 132);
+  font-size: 15px;
+  margin-top: -0.4rem;
+  text-decoration: none;
 }
 
 .container__botao {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin-bottom: 9rem;
 }
 
 .botao__pedido {
+  align-items: center;
   background: #9B2DC1;
   border-radius: 1.6rem;
   border-color: transparent;
+  box-shadow: 3px 5px 7px #888888;
   color: #ffffffea;
+  display: flex;
   font-size: 20px;
-  margin-top: 2rem;
-  padding: 0.8rem;
-  width: 20rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  padding: 7px;
+  width: 15rem;
 }
 
-.botao__pedido div{
-  margin-top: 5px;
-  padding-left: 5px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-  
-    
-}
-
-.container__compra {
-  display: flex;
-  flex-direction: column;
-  
-  
-
-}
-.navegacao {
+/* .navegacao {
     display: flex;
     height: 104px;
     list-style-type: none;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid red;
-}
+    align-items: center;  
+} */
 
 .container__compra-botao{
   display: flex;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 
-.container__compra{
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  bottom: 0px;
- 
-}
 .compra-botao {
-  display: flex;
   align-items: center;
-  align-content: space-around;
   background: #1BE017;
   border-radius: 1.6rem;
   border-color: transparent;
+  box-shadow: 3px 5px 7px #888888;
   color: #ffffffea;
-  font-size: 20px;
-  padding: 1rem;
-  width: 20rem;
   display: flex;
+  font-size: 20px;
   justify-content: center;
+  padding: 10px;
+  width: 15rem;
 }
-img {
+
+/* img {
     width: 34px;
     height: 36px;
     top: 849px;
@@ -141,21 +140,8 @@ h3 {
     text-align: center;
     font-family:'Inter', sans-serif;
     font-weight: 400;
-}
+} */
 
-.compra-botao {
-  background: #9B2DC1;
-  border-radius: 1.6rem;
-  border-color: transparent;
-  color: #ffffffea;
-  font-size: 20px;
-  margin-top: 2rem;
-  padding: 0.8rem;
-  width: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 
