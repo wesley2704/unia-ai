@@ -6,3 +6,24 @@
 @import url("styles/promocoes.css");
 @import url("styles/style-pedido.css");
 @import url("styles/modal.css");
+
+
+:root {
+  --roxo: #481958;
+  --branco: #FFFFFF;
+  --verde: #1BE017;
+  --roxo-claro: #653F71;
+}
+
+body {
+  background: var(--branco);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+.esconder{
+  display: none;
+}
+

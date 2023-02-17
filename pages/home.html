@@ -48,7 +48,7 @@
     <main>
       <div class="container__botao">
         <div class="center-btn">
-          <button type="submit" class="botao__pedido">
+          <button type="submit" class="botao__pedido" onclick="setStatePedido()">
             <img
               src="../../assets/icones/pedido-icone.png"
               class="icone__pedido"
@@ -63,7 +63,7 @@
         </div>  
         
         <div class="container__compra-botao">
-            <button type="submit" class="compra-botao">
+            <button type="submit" class="compra-botao" onclick="setStateFinalizar()">
               <img
                 src="../../assets/icones/check-icone.png"
                 class="icone__compra"
@@ -77,11 +77,11 @@
     <footer>
       <nav class="menu">
           <ul class="navegacao">
-              <div class="icone-container">
+              <div class="icone-container" onclick="setStateSacola()">
                   <li><a href="#"><img src="https://media.discordapp.net/attachments/1075100392431566939/1075102105314017361/sacola.png" alt="icone-sacola"></a></li>
                   <h3 class="titulo-menu">Sacola</h3>
               </div>
-              <div class="icone-container">
+              <div class="icone-container" onclick="setStatePromocoes()">
                   <li><a href="#"><img src="https://media.discordapp.net/attachments/1075100392431566939/1075102105565679786/promocoes.png" alt="icone-promocoes"></a></li>
                   <h3 class="titulo-menu">Promoções</h3>
               </div>

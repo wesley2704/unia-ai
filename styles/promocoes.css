@@ -39,7 +39,7 @@
 }
 .item-promocao{
     font-family: sans-serif;
-    margin: 6em 3em;
+    margin: 1rem 3em;
     border: 1px solid #CCCCCC;
     padding: 0.5em;
     list-style-type: none;
@@ -47,7 +47,8 @@
 .item-promocao li{
     font-weight: bold;
     padding-bottom: 0.4em;
-    font-size: 16pt;
+    padding-right: 0.5rem;
+    font-size: 1rem;
 }
 .item-promocao p{
     font-size: 10pt;

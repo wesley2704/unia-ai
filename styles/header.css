@@ -120,7 +120,7 @@ a {
   
 }
 .compra-botao {
-  margin: auto;
+
   align-items: center;
   background: #1BE017;
   border-radius: 1.6rem;
@@ -128,7 +128,7 @@ a {
   box-shadow: 3px 5px 7px #888888;
   color: #ffffffea;
   display: flex;
-  font-size: 20px;
+  font-size: 16px;
   justify-content: center;
   padding: 10px;
   width: 15rem;

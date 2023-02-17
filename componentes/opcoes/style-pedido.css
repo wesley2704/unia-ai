@@ -18,7 +18,8 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 5px;
     margin-top: 0.8rem;
-   
+
+    
 }
 
 .container__pedido img{
@@ -28,8 +29,8 @@ body{
 
 .container__compra-botao{
     display: flex;
-    margin-top: -5em;
-
+    flex-direction: column;
+   
 }
 .container__paragrafo{
     
@@ -63,4 +64,3 @@ p {
     padding-bottom: 0.6rem;
 
 }   
-
