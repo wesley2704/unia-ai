@@ -12,6 +12,11 @@
 
 }
 
+.excluir{
+    color: red;
+    text-align: center;
+}
+
 .titulo__principal {
     font-size: 22px;
     font-family: sans-serif;

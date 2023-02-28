@@ -7,10 +7,11 @@
     background: var(--roxo);
     border: 1px solid var(--roxo);
     border-radius: 20px;
-    padding: 0.2em;
+    padding: 0.5em;
     margin-top: 0.8rem;
     padding-bottom: 1.2rem;
-
+    min-width: 250px;
+    max-width: 340px;
 }
 .formulário__titulo {
     text-align: center;
@@ -30,7 +31,7 @@
     text-decoration: none;
     margin-top: 0.8em;
     padding: 0.8em;
-    width: 50%;
+    width: 40%;
     text-transform: uppercase;
     margin-bottom: 1.1rem;
     
@@ -58,7 +59,7 @@
 }
 
 .formulário__resposta {
-    width: 100%;
+    width: 87%;
     outline: none;
     border-radius: 11px;
     height: 35px;
@@ -66,8 +67,10 @@
     border: none;
     margin: 0.5em 0;
     color: white;
-    padding: 4px 0px;
-    font-weight: 400;
+    padding: 4px 10px;
+    font-weight: normal;
+    font-size: 14px;
+
 }
 
 .formulário__item-flex{

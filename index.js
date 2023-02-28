@@ -24,6 +24,7 @@ let tigelas = [
   },    
 ];
 let state = "sacola"
+let pedido_finalizado = ''
 let lista_pedidos = []
 //verifica o estado da aplicação  e renderiza de acordo 
 function render(){
@@ -38,7 +39,6 @@ function render(){
     let elementoBtn = document.querySelector(".container__compra-botao")
     elementoBtn.classList.remove('esconder')
   }
-
   if(state == "sacola"){
     let app_sacola = document.querySelector('#pedidos')
     app_sacola.innerHTML = renderizarSacola()
@@ -144,37 +144,56 @@ function render(){
         <div>
             <div class="formulário__item">
                 <label class="item" for="nome">Nome</label>
-                <input class="formulário__resposta" type="text" id="nome">
+                <input class="formulário__resposta" type="text" id="nome" placeholder = "Seu nome">
             </div>
 
             <div class="formulário__item">
                 <label class="item" for="endereco">Endereço</label>
-                <input class="formulário__resposta" type="text" id="endereco">
+                <input class="formulário__resposta" type="text" id="endereco" placeholder = "Local">
             </div>
 
             <div class="formulário__item">
                 <label class="item" for="ponto-referencia">Ponto de referência</label>
-                <input class="formulário__resposta" type="text" id="ponto_refencia">
+                <input class="formulário__resposta" type="text" id="ponto_refencia" placeholder = "Referência">
             </div>
 
             <div class="formulário__item-flex">
                 <div class="item-flex">
                     <label class="item" for="telefone">Telefone</label>
-                    <input class="formulário__resposta" type="text" id="telofone">
+                    <input class="formulário__resposta" type="text" id="telofone" placeholder = "(XX) XXXXX-XXXX">
                 </div>
                 <div class="item-flex">
-                    <label class="item forma-pagamento" for="forma-pagamento">Forma de pagamento</label>
-                    <input class="formulário__resposta" type="text" id="forma-pagamento" >
+                    <label class="item forma-pagamento" for="forma-pagamento" >pagamento</label>
+                    <input class="formulário__resposta" type="text" id="forma-pagamento"placeholder = "forma de pagamento" >
                 </div>
             </div>
         </div>
     
         <div class="btn">
-            <a href="#" class="botao__finalizar">Confirmar entrega</a>
+            <a href="#" class="botao__finalizar" onclick = "setStatePedidoFinalizado()">Confirmar entrega</a>
         </div>
 
     </div>
 </form>`
+  }
+  if(state == "pedidoFinalizaado"){
+    let app_sacola = document.querySelector('#pedidos')
+    app_sacola.innerHTML = ` <section class="container">
+    <div class="container__caixa">
+        <div class="container__inicio">
+            <p class="descricao__inicio">Pedido finalizado com sucesso</p>
+            <img class="imagem__inicio" src="check-o.svg" alt="Logo de check">
+        </div>
+        <div class="container__final">
+            <img class="imagem__final" src="imagem.svg" alt="Imagem de um motoboy fazendo entragas">
+            <div class="link__voltar">
+                <a href="#" class="link__final" onclick = "setStateSacola()">
+                    Voltar ao menu
+                </a>
+            </div>
+        </div>
+    </div>
+</section>`
   }
   
 }
@@ -183,6 +202,7 @@ function renderizarSacola(){
   let render_total_sacola = ''
   if(lista_pedidos.length == 0){
     render_total_sacola = "Não há nenhum pedido!"
+
   }
   else{
     for(let i = 0;i<lista_pedidos.length;i++){
@@ -193,6 +213,7 @@ function renderizarSacola(){
             <h1>${lista_pedidos[i].nome}</h1>
             <p class="adicionais">${lista_pedidos[i].adicionais}</p><br>
             <p class="preco">R$ ${lista_pedidos[i].preco}</p>
+            <p class="excluir" onclick="deletaPedido(${lista_pedidos[i].id})">Excluir pedido</p>
         </div></div>`
   
         render_total_sacola += sacola
@@ -222,6 +243,14 @@ function setStateFinalizar(){
   render()
 }
 
+function setStatePedidoFinalizado(){
+  state = 'pedidoFinalizaado'
+  pedido_finalizado = 'Pedido Finalizado'
+  render()
+}
+
+
+
 
 function criaPedido(){
   let tigelas_local = document.querySelectorAll(".tigela")
@@ -229,10 +258,20 @@ function criaPedido(){
   let cremes = document.querySelectorAll(".creme")
   let frutas = document.querySelectorAll(".frutas")
   let lista_adicionais = []
-  let erro = false
+  let lista_erro = [filtrarQuantidade(1,"tigela"), filtrarQuantidade(3,"adicionais"), filtrarQuantidade(2,"creme"), filtrarQuantidade(2,"frutas")]
+  erro = false
 
+  for (let item of lista_erro) {
+    if(item == false){
+      erro = true
+      
+    }
+  }
 
- if( false){
+  console.log(erro);
+
+ if( erro == true){
+  alert("Preencha os campos corretamemte...")
  }
 else{
   
@@ -258,11 +297,11 @@ else{
   }
 
   let pedido = {
+    id: lista_pedidos.length + 1,
     nome: tigela.nome,
     preco: tigela.preco,
     img: tigela.img,
     adicionais:lista_adicionais
-
   }
   lista_pedidos.push(pedido)
   setStateSacola()
@@ -270,5 +309,38 @@ else{
 }
 }
 
+function deletaPedido(id){
+  newLista = lista_pedidos.filter((n)=> n.id != id)
+  lista_pedidos = newLista
+  render()
+}
+
+function filtrarQuantidade(qtdMax,classes){
+ let erro = false
+ let listaElementos = document.querySelectorAll(`.${classes}`)
+ let listaElementosChecked = [];
+ for (let item of listaElementos) {
+  listaElementosChecked.push(item.checked)
+ }
+ let qtd = 0
+ for (let item of listaElementosChecked) {
+  if (item == true) {
+   qtd++
+  }
+ }
+ if(qtd > qtdMax){
+  return false
+ }
+ else{
+  return true
+ }
+
+
+ //ate aqui
+console.log(listaElementosChecked,qtd);
+  
+}
+
 render()
+
 
