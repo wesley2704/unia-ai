@@ -134,7 +134,7 @@ function render(){
             a taxa de entrega grátis.</p>
     </ul>
 `
-  }
+  } 
   if(state == "finalizarPedido"){
     let app_sacola = document.querySelector('#pedidos')
     app_sacola.innerHTML = `<form class="formulário">
@@ -200,12 +200,14 @@ function render(){
           
 function renderizarSacola(){
   let render_total_sacola = ''
+  var preco = 0
   if(lista_pedidos.length == 0){
     render_total_sacola = "Não há nenhum pedido!"
 
   }
   else{
     for(let i = 0;i<lista_pedidos.length;i++){
+      
       let sacola = `
        <div class="container__pedido">
         <img src="${lista_pedidos[i].img}" alt="" class "img-card">
@@ -215,13 +217,15 @@ function renderizarSacola(){
             <p class="preco">R$ ${lista_pedidos[i].preco}</p>
             <p class="excluir" onclick="deletaPedido(${lista_pedidos[i].id})">Excluir pedido</p>
         </div></div>`
-  
+        preco += lista_pedidos[i].preco
         render_total_sacola += sacola
        
     }
   }
+
+  let preco_render = `<div class = 'preco_total'> Total: ${preco.toFixed(2)}</div>`
   
-  return render_total_sacola
+  return render_total_sacola + `${preco>0?preco_render:""}`
 }
 
 function setStateSacola(){

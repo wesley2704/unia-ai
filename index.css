@@ -85,3 +85,12 @@ body {
   padding: 1rem 4rem;
   border-radius: 20px;
 }
+
+.preco_total{
+  text-align: right;
+  width: 87%;
+  padding: 1rem 0.8rem;
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 20px;
+}
